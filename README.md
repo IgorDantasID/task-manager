@@ -1,8 +1,24 @@
-# SMS
+# TASK MANAGER
 
-# Build and generate a new version
-``` shell
-python3 setup.py sdist bdist_wheel
+## Install
 
-twine upload --repository-url http://10.131.3.7:8081/repository/pypi-hosted/ dist/sms-0.0.1-py3-none-any.whl
+Use **pip** to install the latest stable version of `task-manager`:
+
+```
+$ pip install task-manager
+```
+
+## How to use
+in tasks.py
+```python
+from task_manager.services import TaskManager
+
+@task(name='get_urls')
+def get_urls():
+    go = TaskManager(name='get_urls')
+    if go.start() is True:
+        go.close()
+        return 'ok'
+    else:
+        return 'lock'
 ```

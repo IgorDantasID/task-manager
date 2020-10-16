@@ -12,7 +12,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
-    url="https://gitlab.com/brain/python/packages/task-manager.git",
+    url="https://github.com/IgorDantasID/task-manager.git",
     packages=find_packages(exclude=['tests*']),
     install_requires=[
         'Django>=3',
