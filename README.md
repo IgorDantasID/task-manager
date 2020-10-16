@@ -2,16 +2,16 @@
 
 ## Install
 
-Use **pip** to install the latest stable version of `task-manager`:
+Use **pip** to install the latest stable version of `id-manager`:
 
 ```
-$ pip install task-manager
+$ pip install id-manager
 ```
 
 ## How to use
 in tasks.py
 ```python
-from task_manager.services import TaskManager
+from id_manager.services import TaskManager
 
 @task(name='get_urls')
 def get_urls():

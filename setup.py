@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="task-manager",
-    version="0.0.1",
+    name="id-manager",
+    version="0.0.2",
     author="Igor Dantas de Aguiar",
     author_email="igordantas91@icloud.com",
     description="Task manager celery to django",
